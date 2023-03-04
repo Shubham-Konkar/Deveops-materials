@@ -1,0 +1,88 @@
+    1  
+    2  apt-get update
+    3  apt install docker.io
+    4  
+    5  docker pull hello world
+    6  docker pull rancher/windows-scheduler
+    7  docker pull centos
+    8  docker images
+    9  
+   10  docker --version
+   11  docker images
+   12  docker pull ubuntu
+   13  docker images
+   14  docker pull hello-world
+   15  
+   16  docker images
+   17  docker run hello-world
+   18  docker run -it -d hello-world
+   19  docker run -it hello-world
+   20  docker run -it -d ubuntu
+   21  docker ps
+   22  docker ps -a
+   23  docker exec 873bd032ccdd bash
+   24  docker exec 873bd032ccdd 
+   25  docker exec -it 873bd032ccdd bash
+   26  
+   27  docker ps
+   28  docker stop 873bd032ccdd
+   29  doscker ps
+   30  docker ps -a
+   31  docker rm -f 873bd032ccdd
+   32  docker ps -a
+   33  
+   34  ls
+   35  ls -a
+   36  touch dockerfile
+   37  ls
+   38  vim dockerfile 
+   39  at dockerfile 
+   40  cat dockerfile 
+   41  
+   42  nano dockerfile 
+   43  ls
+   44  touch somefile.txt
+   45  ls
+   46  rm -f dockerfile somefile.txt 
+   47  
+   48  ls
+   49  mkdir docker
+   50  cd docker/
+   51  ls
+   52  touch Dockerfile
+   53  nano Dockerfile 
+   54  cat Dockerfile 
+   55  touch index.html
+   56  nano index.html 
+   57  
+   58  ls
+   59  docker build . -t intellipaat/custom
+   60  docker images
+   61  
+   62  docker images
+   63  docker run -it -p 81:80 -d intellipaat/custom
+   64  docker ps
+   65  docker kill 733fde8b57b9
+   66  docker ps
+   67  docker ps -a
+   68  docker rm -f 733fde8b57b9
+   69  
+   70  docker run -ti -p 81:80 -d intellipaat/custom
+   71  docker ps
+   72  docker kill 39c1ec8d8620
+   73  docker rm -f 39c1ec8d8620
+   74  docker run -it -p 81:80 -d intellipaat/custom
+   75  docker ps
+   76  docker login
+   77  docker pull intellipaat/custom
+   78  docker push intellipaat/custom
+   79  docker tag intellipaat/custom:vish9493/apache2-modified
+   80  docker tag custom:vish9493/apache2-modified
+   81  docker tag intellipaat:vish9493/apache2-modified
+   82  docker tag intellipaat vish9493/apache2-modified
+   83  docker tag intellipaat/custom vish9493/apache2-modified
+   84  
+   85  docker images
+   86  docker push vish9493/apache2-modified
+   87  
+   88  history

@@ -1,0 +1,23 @@
+how to make ip static :
+
+cd /etc/netplan 
+ls /etc/netplan
+see the <yaml file> .
+
+vim <yaml file >
+
+Make changes in yaml file 
+network:
+  version: 2
+  renderer: networkd *the renderer property tells netplan which network manager will manage devices connected to the linux box
+  ethernets:
+     enp0s3:
+          dhcp4: no
+          addresses: [192.168.1.4/24] 
+          gateway4: 192.168.1.1
+          nameservers:
+                          addresses: [8.8.8.8,8.8.4.4]
+
+save the file ,
+
+next do:-  sudo netplan try or sudo netplan start

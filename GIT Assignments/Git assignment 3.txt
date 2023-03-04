@@ -1,0 +1,27 @@
+git init
+git branch develop
+git branch F1
+git branch f2
+touch >master.txt
+git add master.txt
+git commit -m "commiting in master"
+git checkout develop
+touch>develop.txt
+ ls
+git checkout F1
+touch>F1.txt
+ls
+git checkout f2
+touch>f2.txt
+ls
+git remote add origin https://github.com/Shubham-Konkar/assignmentprac1.git
+git push origin master
+git push origin develop
+git push origin F1
+git push origin f2
+git branch -D f2
+git checkout master
+git branch -D f2
+Remote repo >View all branches>Delete f2
+
+  

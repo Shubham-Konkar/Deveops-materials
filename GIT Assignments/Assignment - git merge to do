@@ -1,0 +1,44 @@
+Create a repo in github/local
+
+- main/master
+create xyz.txt (add some text)
+
+commands to create branch
+git branch featureA
+git branch featureB
+
+- Devoloper A(featureA) 
+featureA branch 
+make change to xyz.txt
+merge featureA branch to main - 1st
+commands
+git switch featureA
+echo "new comment 1" >> xyz.txt
+git add .
+git commit -m "second commit devA"
+
+- Developer B(featureB)
+featureB branch
+make change to xyz.txt
+merge 2nd branch
+merge conflict
+commands
+git switch featureB
+echo "new comment x" >> xyz.txt
+git add .
+git commit -m "next commit devB"
+
+rebase changes in master/main branch
+git switch main
+git rebase featureA
+git rebase featureB - this command will create merge conflict
+
+- resolve
+git mergetool
+make the changes - remove data in red
+esc, :wq
+esc. :qa
+git clean -f
+git merge --continue
+
+

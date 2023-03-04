@@ -1,0 +1,34 @@
+### ignore the number on first it is no of line  ####
+
+228  git init
+  229  ls -a
+  230  echo >master.txt
+  231  git add master.txt 
+  232  git commit -m "commiting master"
+  233  git status
+  234  git branch public1
+  235  git branch public2
+  236  git branch private
+  237  git branch --all
+  238  git checkout public1
+  239  echo >public1.txt
+  240  ls
+  241  git add public1.txt
+  242  git commit -m "public 1 file commit"
+  243  git checkout master
+  244  git merge public1
+  245  git merge public2
+247  git checkout private
+  248  echo "updating code in master.txt" >master.txt
+  249  git add master.txt 
+  250  git commit -m "commiting in private with new master"
+  251  git checkout public1
+  252  git merge private
+  253  git checkout public2
+  254  git merge private
+  255  git checkout master
+  256  git merge private
+  257  ls
+  258  git checkout private
+  259  git merge master
+  260  ls

@@ -1,0 +1,46 @@
+git init
+git branch --all
+echo >master.txt
+git add .
+git commit -m "commiting in master branch"
+git branch --all
+ git branch hotfix
+git branch release
+git branch develop
+git branch featureA
+git branch featureB
+git switch featureA
+echo "adding features in code">master.txt
+git status
+git add master.txt 
+git commit -m " adding features "
+git switch develop
+echo "code">master.txt
+git add master.txt 
+git commit -m " code "
+git merge featureA
+git merge-tool
+git mergetool
+git clean -f
+git status
+git commit -m " developed code "
+cat master.txt 
+git branch
+git switch release
+git merge develop
+cat master.txt 
+git switch master
+git merge release
+git mergetool
+git clean -f
+cat master.txt 
+ git add master.txt 
+git commit -m "Final file"
+git switch hotfix
+echo "adding changes">urgent.txt
+git status
+git add urgent.txt 
+git commit -m "urgent changes"
+git switch master
+git merge hotfix
+ls

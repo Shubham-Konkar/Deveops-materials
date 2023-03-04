@@ -1,0 +1,15 @@
+mkdir Assignmets
+touch Code.txt
+touch Log.txt
+touch Output.txt
+ls
+git init
+git status
+git add Code.txt
+git add Output.txt
+git commit -m "Assignment to be done"
+git remote add origin "https://github.com/Shubham-Konkar/test-01"
+git push origin master
+
+
+Problem faced :- Trying to add changes in  in same branch master where some practise was done so need to use pull with rebase so dont need to commit  and then used Push command

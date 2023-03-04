@@ -1,0 +1,22 @@
+
+echo >feature1.txt
+echo >feature2.txt
+git add .
+git commit -m "Ading files into master"
+git branch devlop
+git branch feature1
+git branch feature2
+git branch --all
+git checkout develop
+git stash -u
+git checkout feature1
+echo >new.txt
+git add new.txt
+git commit -m "adding file in feature 1 branch"
+git status
+git checkout develop
+git stash pop
+ git add develop.txt 
+ git commit -m "adding file in develop  branch"
+ git status
+
